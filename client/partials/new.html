@@ -1,0 +1,10 @@
+<div>
+  <a href="#!/">Home</a><br><br>
+  <form ng-submit=create()>
+    <p>First Name: <input type="text" ng-model="newFriend.firstname"></p>
+    <p>Last Name: <input type="text" ng-model="newFriend.lasttname"></p>
+    <p>Birthday: <input type="date" ng-model='newFriend.birthday'></p>
+    <p><input type="submit" value="Create"></p>
+  </form>
+  <span ng-repeat="error in errors" ng-bind="error.message"></span>
+</div>

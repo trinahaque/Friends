@@ -1,0 +1,11 @@
+<div>
+  <a href="#!/">Home</a><br>
+  <h2>Edit {{editFriend.first_name}} {{editFriend.last_name}}'s' Information</h2>
+  <form ng-submit= update()>
+    <p>First Name: <input ng-model="editFriend.first_name"></p>
+    <p>Last Name: <input type="text" ng-model="editFriend.last_name"></p>
+    <p>Birthday: <input type="date" ng-model='editFriend.birthday'></p>
+    <p><input type="submit" value="Update"></p>
+  </form>
+  <span ng-bind="error"></span>
+</div>

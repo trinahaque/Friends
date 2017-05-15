@@ -1,0 +1,8 @@
+<div>
+  <a href="#!/">Home</a><br><br>
+  First Name: <span ng-bind="friend.first_name"></span><br><br>
+  Last Name: <span ng-bind="friend.last_name"></span><br><br>
+  <!-- Birthday: <span ng-bind="friend.birthday"></span> -->
+  Birthday: <span ng-bind="friend.birthday | date: dd-MM-yyyy"></span><br><br>
+  <!-- User Added: <span ng-bind="friend.createdAt | date: dd-MM-yyyy"></span> -->
+</div>
